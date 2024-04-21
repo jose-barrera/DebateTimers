@@ -86,7 +86,7 @@ namespace DebateTimers
             Setup();
             ResumeLayout();
 
-            lblVersion.Text = Assembly.GetExecutingAssembly().GetName().Version!.ToString();
+            lblVersion.Text = "Versión: " + Assembly.GetExecutingAssembly().GetName().Version!.ToString() + " - Focault";
         }
 
         private void FinishedCountdown(object? sender, EventArgs e)
@@ -168,7 +168,9 @@ namespace DebateTimers
 
             // Sets the state of general buttons
             btnExcess.Enabled = false;
+            btnExcess.BackgroundImage = Resources.crossedclock_disabled;
             btnExtra.Enabled = false;
+            btnExtra.BackgroundImage = Resources.extratime_disabled;
             btnReset.Enabled = false;
             btnReset.BackgroundImage = Resources.reset_disabled;
         }
@@ -207,7 +209,9 @@ namespace DebateTimers
 
             // Sets the state of general buttons
             btnExcess.Enabled = false;
+            btnExcess.BackgroundImage = Resources.crossedclock_disabled;
             btnExtra.Enabled = false;
+            btnExtra.BackgroundImage = Resources.extratime_disabled;
             btnReset.Enabled = false;
             btnReset.BackgroundImage = Resources.reset_disabled;
         }
@@ -238,13 +242,16 @@ namespace DebateTimers
 
                 // Sets the countdowns
                 countdowns[i].Seconds = DEBATE_TIME;
+                countdowns[i].DoubleClick += ExtraTime;
             }
 
             countdownGeneral.Seconds = PARTICIPATION_TIME;
 
             // Sets the state of general buttons
             btnExcess.Enabled = true;
+            btnExcess.BackgroundImage = Resources.crossedclock;
             btnExtra.Enabled = true;
+            btnExtra.BackgroundImage = Resources.extratime;
             btnReset.Enabled = true;
             btnReset.BackgroundImage = Resources.reset;
         }
@@ -276,13 +283,16 @@ namespace DebateTimers
 
                 // Sets the countdowns
                 countdowns[i].Seconds = CLOSURE_TIME;
+                countdowns[i].DoubleClick -= ExtraTime;
             }
 
             countdownGeneral.Seconds = CLOSURE_TIME;
 
             // Sets the state of general buttons
             btnExcess.Enabled = false;
+            btnExcess.BackgroundImage = Resources.crossedclock_disabled;
             btnExtra.Enabled = false;
+            btnExtra.BackgroundImage = Resources.extratime_disabled;
             btnReset.Enabled = false;
             btnReset.BackgroundImage = Resources.reset_disabled;
         }
@@ -680,6 +690,18 @@ namespace DebateTimers
                 MessageBox.Show("NO ESTÁ CONFIGURADO ESTE PARÁMETRO... NO PUEDE APLICARSE ESTA ACCIÓN.", "Aviso", MessageBoxButtons.OK);
             }
 
+        }
+
+        private void ExtraTime(object? sender, EventArgs e)
+        {
+            CountdownView countdown = (CountdownView)sender!;
+            int i = (int)countdown!.Name.Last() - 49;
+
+            if (MessageBox.Show("¿ESTÁS SEGURO DE APLICAR EL TIEMPO EXTRA A " + textboxes[i].Text + "?\nNo podrás revertir este cambio.",
+                "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                countdown.Seconds = EXTRA_TIME;
+            }
         }
     }
 }

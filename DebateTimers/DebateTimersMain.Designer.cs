@@ -142,7 +142,7 @@
             panelChronos.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             panelChronos.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             panelChronos.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            panelChronos.Size = new Size(691, 560);
+            panelChronos.Size = new Size(987, 933);
             panelChronos.TabIndex = 0;
             // 
             // countdown1
@@ -151,12 +151,12 @@
             countdown1.CandidateFont = new Font("Swis721 BlkCn BT", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             countdown1.Dock = DockStyle.Fill;
             countdown1.Font = new Font("Swis721 BlkCn BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            countdown1.Location = new Point(3, 3);
-            countdown1.Margin = new Padding(1);
+            countdown1.Location = new Point(3, 4);
+            countdown1.Margin = new Padding(1, 2, 1, 2);
             countdown1.Name = "countdown1";
             countdown1.Seconds = 0;
             countdown1.SecondsAlarm = -1;
-            countdown1.Size = new Size(340, 135);
+            countdown1.Size = new Size(488, 226);
             countdown1.TabIndex = 0;
             countdown1.TabStop = false;
             // 
@@ -166,12 +166,12 @@
             countdown3.CandidateFont = new Font("Swis721 BlkCn BT", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             countdown3.Dock = DockStyle.Fill;
             countdown3.Font = new Font("Swis721 BlkCn BT", 14.25F);
-            countdown3.Location = new Point(3, 142);
-            countdown3.Margin = new Padding(1);
+            countdown3.Location = new Point(3, 236);
+            countdown3.Margin = new Padding(1, 2, 1, 2);
             countdown3.Name = "countdown3";
             countdown3.Seconds = 0;
             countdown3.SecondsAlarm = -1;
-            countdown3.Size = new Size(340, 135);
+            countdown3.Size = new Size(488, 226);
             countdown3.TabIndex = 2;
             countdown3.TabStop = false;
             // 
@@ -181,12 +181,12 @@
             countdown2.CandidateFont = new Font("Swis721 BlkCn BT", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             countdown2.Dock = DockStyle.Fill;
             countdown2.Font = new Font("Swis721 BlkCn BT", 14.25F);
-            countdown2.Location = new Point(347, 3);
-            countdown2.Margin = new Padding(1);
+            countdown2.Location = new Point(495, 4);
+            countdown2.Margin = new Padding(1, 2, 1, 2);
             countdown2.Name = "countdown2";
             countdown2.Seconds = 0;
             countdown2.SecondsAlarm = -1;
-            countdown2.Size = new Size(341, 135);
+            countdown2.Size = new Size(489, 226);
             countdown2.TabIndex = 1;
             countdown2.TabStop = false;
             // 
@@ -196,12 +196,12 @@
             countdown4.CandidateFont = new Font("Swis721 BlkCn BT", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             countdown4.Dock = DockStyle.Fill;
             countdown4.Font = new Font("Swis721 BlkCn BT", 14.25F);
-            countdown4.Location = new Point(347, 142);
-            countdown4.Margin = new Padding(1);
+            countdown4.Location = new Point(495, 236);
+            countdown4.Margin = new Padding(1, 2, 1, 2);
             countdown4.Name = "countdown4";
             countdown4.Seconds = 0;
             countdown4.SecondsAlarm = -1;
-            countdown4.Size = new Size(341, 135);
+            countdown4.Size = new Size(489, 226);
             countdown4.TabIndex = 3;
             countdown4.TabStop = false;
             // 
@@ -211,12 +211,12 @@
             countdown5.CandidateFont = new Font("Swis721 BlkCn BT", 24F);
             countdown5.Dock = DockStyle.Fill;
             countdown5.Font = new Font("Swis721 BlkCn BT", 14.25F);
-            countdown5.Location = new Point(3, 281);
-            countdown5.Margin = new Padding(1);
+            countdown5.Location = new Point(3, 468);
+            countdown5.Margin = new Padding(1, 2, 1, 2);
             countdown5.Name = "countdown5";
             countdown5.Seconds = 0;
             countdown5.SecondsAlarm = -1;
-            countdown5.Size = new Size(340, 135);
+            countdown5.Size = new Size(488, 226);
             countdown5.TabIndex = 4;
             countdown5.TabStop = false;
             // 
@@ -226,12 +226,12 @@
             countdown6.CandidateFont = new Font("Swis721 BlkCn BT", 24F);
             countdown6.Dock = DockStyle.Fill;
             countdown6.Font = new Font("Swis721 BlkCn BT", 14.25F);
-            countdown6.Location = new Point(347, 281);
-            countdown6.Margin = new Padding(1);
+            countdown6.Location = new Point(495, 468);
+            countdown6.Margin = new Padding(1, 2, 1, 2);
             countdown6.Name = "countdown6";
             countdown6.Seconds = 0;
             countdown6.SecondsAlarm = -1;
-            countdown6.Size = new Size(341, 135);
+            countdown6.Size = new Size(489, 226);
             countdown6.TabIndex = 5;
             countdown6.TabStop = false;
             // 
@@ -241,12 +241,12 @@
             countdown7.CandidateFont = new Font("Swis721 BlkCn BT", 24F);
             countdown7.Dock = DockStyle.Fill;
             countdown7.Font = new Font("Swis721 BlkCn BT", 14.25F);
-            countdown7.Location = new Point(3, 420);
-            countdown7.Margin = new Padding(1);
+            countdown7.Location = new Point(3, 700);
+            countdown7.Margin = new Padding(1, 2, 1, 2);
             countdown7.Name = "countdown7";
             countdown7.Seconds = 0;
             countdown7.SecondsAlarm = -1;
-            countdown7.Size = new Size(340, 137);
+            countdown7.Size = new Size(488, 229);
             countdown7.TabIndex = 6;
             countdown7.TabStop = false;
             // 
@@ -256,12 +256,12 @@
             countdown8.CandidateFont = new Font("Swis721 BlkCn BT", 24F);
             countdown8.Dock = DockStyle.Fill;
             countdown8.Font = new Font("Swis721 BlkCn BT", 14.25F);
-            countdown8.Location = new Point(347, 420);
-            countdown8.Margin = new Padding(1);
+            countdown8.Location = new Point(495, 700);
+            countdown8.Margin = new Padding(1, 2, 1, 2);
             countdown8.Name = "countdown8";
             countdown8.Seconds = 0;
             countdown8.SecondsAlarm = -1;
-            countdown8.Size = new Size(341, 137);
+            countdown8.Size = new Size(489, 229);
             countdown8.TabIndex = 7;
             countdown8.TabStop = false;
             // 
@@ -280,10 +280,9 @@
             panelMain.Controls.Add(panel8);
             panelMain.Dock = DockStyle.Fill;
             panelMain.Location = new Point(0, 0);
-            panelMain.Margin = new Padding(2);
             panelMain.Name = "panelMain";
-            panelMain.Padding = new Padding(2);
-            panelMain.Size = new Size(621, 560);
+            panelMain.Padding = new Padding(3);
+            panelMain.Size = new Size(888, 933);
             panelMain.TabIndex = 1;
             // 
             // countdownGeneral
@@ -292,12 +291,12 @@
             countdownGeneral.CandidateFont = new Font("Swis721 BlkCn BT", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             countdownGeneral.Dock = DockStyle.Fill;
             countdownGeneral.Font = new Font("Swis721 BlkCn BT", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            countdownGeneral.Location = new Point(2, 2);
-            countdownGeneral.Margin = new Padding(1);
+            countdownGeneral.Location = new Point(3, 3);
+            countdownGeneral.Margin = new Padding(1, 2, 1, 2);
             countdownGeneral.Name = "countdownGeneral";
             countdownGeneral.Seconds = 0;
             countdownGeneral.SecondsAlarm = -1;
-            countdownGeneral.Size = new Size(615, 218);
+            countdownGeneral.Size = new Size(880, 365);
             countdownGeneral.TabIndex = 3;
             countdownGeneral.TabStop = false;
             countdownGeneral.DoubleClick += TimerConfig;
@@ -310,21 +309,19 @@
             panel1.Controls.Add(btnReset1);
             panel1.Controls.Add(btnStop1);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(2, 220);
-            panel1.Margin = new Padding(2);
+            panel1.Location = new Point(3, 368);
             panel1.Name = "panel1";
-            panel1.Size = new Size(615, 42);
+            panel1.Size = new Size(880, 70);
             panel1.TabIndex = 1;
             // 
             // txtName1
             // 
             txtName1.Dock = DockStyle.Fill;
             txtName1.Font = new Font("Consolas", 20F);
-            txtName1.Location = new Point(98, 0);
-            txtName1.Margin = new Padding(2);
+            txtName1.Location = new Point(140, 0);
             txtName1.Name = "txtName1";
             txtName1.ShortcutsEnabled = false;
-            txtName1.Size = new Size(468, 42);
+            txtName1.Size = new Size(670, 70);
             txtName1.TabIndex = 0;
             txtName1.Text = "...";
             txtName1.Enter += NamesEnter;
@@ -338,10 +335,9 @@
             btnStart1.BackgroundImageLayout = ImageLayout.Stretch;
             btnStart1.Dock = DockStyle.Left;
             btnStart1.FlatStyle = FlatStyle.Popup;
-            btnStart1.Location = new Point(49, 0);
-            btnStart1.Margin = new Padding(2);
+            btnStart1.Location = new Point(70, 0);
             btnStart1.Name = "btnStart1";
-            btnStart1.Size = new Size(49, 42);
+            btnStart1.Size = new Size(70, 70);
             btnStart1.TabIndex = 3;
             btnStart1.TabStop = false;
             btnStart1.UseVisualStyleBackColor = false;
@@ -352,10 +348,9 @@
             btnReset1.BackgroundImageLayout = ImageLayout.Stretch;
             btnReset1.Dock = DockStyle.Right;
             btnReset1.FlatStyle = FlatStyle.Popup;
-            btnReset1.Location = new Point(566, 0);
-            btnReset1.Margin = new Padding(2);
+            btnReset1.Location = new Point(810, 0);
             btnReset1.Name = "btnReset1";
-            btnReset1.Size = new Size(49, 42);
+            btnReset1.Size = new Size(70, 70);
             btnReset1.TabIndex = 2;
             btnReset1.TabStop = false;
             btnReset1.UseVisualStyleBackColor = true;
@@ -368,9 +363,8 @@
             btnStop1.Dock = DockStyle.Left;
             btnStop1.FlatStyle = FlatStyle.Popup;
             btnStop1.Location = new Point(0, 0);
-            btnStop1.Margin = new Padding(2);
             btnStop1.Name = "btnStop1";
-            btnStop1.Size = new Size(49, 42);
+            btnStop1.Size = new Size(70, 70);
             btnStop1.TabIndex = 0;
             btnStop1.TabStop = false;
             btnStop1.UseVisualStyleBackColor = true;
@@ -383,21 +377,19 @@
             panel2.Controls.Add(btnReset2);
             panel2.Controls.Add(btnStop2);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(2, 262);
-            panel2.Margin = new Padding(2);
+            panel2.Location = new Point(3, 438);
             panel2.Name = "panel2";
-            panel2.Size = new Size(615, 42);
+            panel2.Size = new Size(880, 70);
             panel2.TabIndex = 2;
             // 
             // txtName2
             // 
             txtName2.Dock = DockStyle.Fill;
             txtName2.Font = new Font("Consolas", 20F);
-            txtName2.Location = new Point(98, 0);
-            txtName2.Margin = new Padding(2);
+            txtName2.Location = new Point(140, 0);
             txtName2.Name = "txtName2";
             txtName2.ShortcutsEnabled = false;
-            txtName2.Size = new Size(468, 42);
+            txtName2.Size = new Size(670, 70);
             txtName2.TabIndex = 0;
             txtName2.Text = "...";
             txtName2.Enter += NamesEnter;
@@ -411,10 +403,9 @@
             btnStart2.BackgroundImageLayout = ImageLayout.Stretch;
             btnStart2.Dock = DockStyle.Left;
             btnStart2.FlatStyle = FlatStyle.Popup;
-            btnStart2.Location = new Point(49, 0);
-            btnStart2.Margin = new Padding(2);
+            btnStart2.Location = new Point(70, 0);
             btnStart2.Name = "btnStart2";
-            btnStart2.Size = new Size(49, 42);
+            btnStart2.Size = new Size(70, 70);
             btnStart2.TabIndex = 0;
             btnStart2.TabStop = false;
             btnStart2.UseVisualStyleBackColor = false;
@@ -425,10 +416,9 @@
             btnReset2.BackgroundImageLayout = ImageLayout.Stretch;
             btnReset2.Dock = DockStyle.Right;
             btnReset2.FlatStyle = FlatStyle.Popup;
-            btnReset2.Location = new Point(566, 0);
-            btnReset2.Margin = new Padding(2);
+            btnReset2.Location = new Point(810, 0);
             btnReset2.Name = "btnReset2";
-            btnReset2.Size = new Size(49, 42);
+            btnReset2.Size = new Size(70, 70);
             btnReset2.TabIndex = 2;
             btnReset2.TabStop = false;
             btnReset2.UseVisualStyleBackColor = true;
@@ -441,9 +431,8 @@
             btnStop2.Dock = DockStyle.Left;
             btnStop2.FlatStyle = FlatStyle.Popup;
             btnStop2.Location = new Point(0, 0);
-            btnStop2.Margin = new Padding(2);
             btnStop2.Name = "btnStop2";
-            btnStop2.Size = new Size(49, 42);
+            btnStop2.Size = new Size(70, 70);
             btnStop2.TabIndex = 0;
             btnStop2.TabStop = false;
             btnStop2.UseVisualStyleBackColor = true;
@@ -456,21 +445,19 @@
             panel3.Controls.Add(btnReset3);
             panel3.Controls.Add(btnStop3);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(2, 304);
-            panel3.Margin = new Padding(2);
+            panel3.Location = new Point(3, 508);
             panel3.Name = "panel3";
-            panel3.Size = new Size(615, 42);
+            panel3.Size = new Size(880, 70);
             panel3.TabIndex = 3;
             // 
             // txtName3
             // 
             txtName3.Dock = DockStyle.Fill;
             txtName3.Font = new Font("Consolas", 20F);
-            txtName3.Location = new Point(98, 0);
-            txtName3.Margin = new Padding(2);
+            txtName3.Location = new Point(140, 0);
             txtName3.Name = "txtName3";
             txtName3.ShortcutsEnabled = false;
-            txtName3.Size = new Size(468, 42);
+            txtName3.Size = new Size(670, 70);
             txtName3.TabIndex = 0;
             txtName3.Text = "...";
             txtName3.Enter += NamesEnter;
@@ -484,10 +471,9 @@
             btnStart3.BackgroundImageLayout = ImageLayout.Stretch;
             btnStart3.Dock = DockStyle.Left;
             btnStart3.FlatStyle = FlatStyle.Popup;
-            btnStart3.Location = new Point(49, 0);
-            btnStart3.Margin = new Padding(2);
+            btnStart3.Location = new Point(70, 0);
             btnStart3.Name = "btnStart3";
-            btnStart3.Size = new Size(49, 42);
+            btnStart3.Size = new Size(70, 70);
             btnStart3.TabIndex = 0;
             btnStart3.TabStop = false;
             btnStart3.UseVisualStyleBackColor = false;
@@ -498,10 +484,9 @@
             btnReset3.BackgroundImageLayout = ImageLayout.Stretch;
             btnReset3.Dock = DockStyle.Right;
             btnReset3.FlatStyle = FlatStyle.Popup;
-            btnReset3.Location = new Point(566, 0);
-            btnReset3.Margin = new Padding(2);
+            btnReset3.Location = new Point(810, 0);
             btnReset3.Name = "btnReset3";
-            btnReset3.Size = new Size(49, 42);
+            btnReset3.Size = new Size(70, 70);
             btnReset3.TabIndex = 2;
             btnReset3.TabStop = false;
             btnReset3.UseVisualStyleBackColor = true;
@@ -514,9 +499,8 @@
             btnStop3.Dock = DockStyle.Left;
             btnStop3.FlatStyle = FlatStyle.Popup;
             btnStop3.Location = new Point(0, 0);
-            btnStop3.Margin = new Padding(2);
             btnStop3.Name = "btnStop3";
-            btnStop3.Size = new Size(49, 42);
+            btnStop3.Size = new Size(70, 70);
             btnStop3.TabIndex = 0;
             btnStop3.TabStop = false;
             btnStop3.UseVisualStyleBackColor = true;
@@ -529,21 +513,19 @@
             panel4.Controls.Add(btnReset4);
             panel4.Controls.Add(btnStop4);
             panel4.Dock = DockStyle.Bottom;
-            panel4.Location = new Point(2, 346);
-            panel4.Margin = new Padding(2);
+            panel4.Location = new Point(3, 578);
             panel4.Name = "panel4";
-            panel4.Size = new Size(615, 42);
+            panel4.Size = new Size(880, 70);
             panel4.TabIndex = 4;
             // 
             // txtName4
             // 
             txtName4.Dock = DockStyle.Fill;
             txtName4.Font = new Font("Consolas", 20F);
-            txtName4.Location = new Point(98, 0);
-            txtName4.Margin = new Padding(2);
+            txtName4.Location = new Point(140, 0);
             txtName4.Name = "txtName4";
             txtName4.ShortcutsEnabled = false;
-            txtName4.Size = new Size(468, 42);
+            txtName4.Size = new Size(670, 70);
             txtName4.TabIndex = 0;
             txtName4.Text = "...";
             txtName4.Enter += NamesEnter;
@@ -557,10 +539,9 @@
             btnStart4.BackgroundImageLayout = ImageLayout.Stretch;
             btnStart4.Dock = DockStyle.Left;
             btnStart4.FlatStyle = FlatStyle.Popup;
-            btnStart4.Location = new Point(49, 0);
-            btnStart4.Margin = new Padding(2);
+            btnStart4.Location = new Point(70, 0);
             btnStart4.Name = "btnStart4";
-            btnStart4.Size = new Size(49, 42);
+            btnStart4.Size = new Size(70, 70);
             btnStart4.TabIndex = 0;
             btnStart4.TabStop = false;
             btnStart4.UseVisualStyleBackColor = false;
@@ -571,10 +552,9 @@
             btnReset4.BackgroundImageLayout = ImageLayout.Stretch;
             btnReset4.Dock = DockStyle.Right;
             btnReset4.FlatStyle = FlatStyle.Popup;
-            btnReset4.Location = new Point(566, 0);
-            btnReset4.Margin = new Padding(2);
+            btnReset4.Location = new Point(810, 0);
             btnReset4.Name = "btnReset4";
-            btnReset4.Size = new Size(49, 42);
+            btnReset4.Size = new Size(70, 70);
             btnReset4.TabIndex = 2;
             btnReset4.TabStop = false;
             btnReset4.UseVisualStyleBackColor = true;
@@ -587,9 +567,8 @@
             btnStop4.Dock = DockStyle.Left;
             btnStop4.FlatStyle = FlatStyle.Popup;
             btnStop4.Location = new Point(0, 0);
-            btnStop4.Margin = new Padding(2);
             btnStop4.Name = "btnStop4";
-            btnStop4.Size = new Size(49, 42);
+            btnStop4.Size = new Size(70, 70);
             btnStop4.TabIndex = 2;
             btnStop4.TabStop = false;
             btnStop4.UseVisualStyleBackColor = true;
@@ -602,21 +581,19 @@
             panel5.Controls.Add(btnReset5);
             panel5.Controls.Add(btnStop5);
             panel5.Dock = DockStyle.Bottom;
-            panel5.Location = new Point(2, 388);
-            panel5.Margin = new Padding(2);
+            panel5.Location = new Point(3, 648);
             panel5.Name = "panel5";
-            panel5.Size = new Size(615, 42);
+            panel5.Size = new Size(880, 70);
             panel5.TabIndex = 5;
             // 
             // txtName5
             // 
             txtName5.Dock = DockStyle.Fill;
             txtName5.Font = new Font("Consolas", 20F);
-            txtName5.Location = new Point(98, 0);
-            txtName5.Margin = new Padding(2);
+            txtName5.Location = new Point(140, 0);
             txtName5.Name = "txtName5";
             txtName5.ShortcutsEnabled = false;
-            txtName5.Size = new Size(468, 42);
+            txtName5.Size = new Size(670, 70);
             txtName5.TabIndex = 0;
             txtName5.Text = "...";
             txtName5.Enter += NamesEnter;
@@ -630,10 +607,9 @@
             btnStart5.BackgroundImageLayout = ImageLayout.Stretch;
             btnStart5.Dock = DockStyle.Left;
             btnStart5.FlatStyle = FlatStyle.Popup;
-            btnStart5.Location = new Point(49, 0);
-            btnStart5.Margin = new Padding(2);
+            btnStart5.Location = new Point(70, 0);
             btnStart5.Name = "btnStart5";
-            btnStart5.Size = new Size(49, 42);
+            btnStart5.Size = new Size(70, 70);
             btnStart5.TabIndex = 0;
             btnStart5.TabStop = false;
             btnStart5.UseVisualStyleBackColor = false;
@@ -644,10 +620,9 @@
             btnReset5.BackgroundImageLayout = ImageLayout.Stretch;
             btnReset5.Dock = DockStyle.Right;
             btnReset5.FlatStyle = FlatStyle.Popup;
-            btnReset5.Location = new Point(566, 0);
-            btnReset5.Margin = new Padding(2);
+            btnReset5.Location = new Point(810, 0);
             btnReset5.Name = "btnReset5";
-            btnReset5.Size = new Size(49, 42);
+            btnReset5.Size = new Size(70, 70);
             btnReset5.TabIndex = 2;
             btnReset5.TabStop = false;
             btnReset5.UseVisualStyleBackColor = true;
@@ -660,9 +635,8 @@
             btnStop5.Dock = DockStyle.Left;
             btnStop5.FlatStyle = FlatStyle.Popup;
             btnStop5.Location = new Point(0, 0);
-            btnStop5.Margin = new Padding(2);
             btnStop5.Name = "btnStop5";
-            btnStop5.Size = new Size(49, 42);
+            btnStop5.Size = new Size(70, 70);
             btnStop5.TabIndex = 1;
             btnStop5.TabStop = false;
             btnStop5.UseVisualStyleBackColor = true;
@@ -675,21 +649,19 @@
             panel6.Controls.Add(btnReset6);
             panel6.Controls.Add(btnStop6);
             panel6.Dock = DockStyle.Bottom;
-            panel6.Location = new Point(2, 430);
-            panel6.Margin = new Padding(2);
+            panel6.Location = new Point(3, 718);
             panel6.Name = "panel6";
-            panel6.Size = new Size(615, 42);
+            panel6.Size = new Size(880, 70);
             panel6.TabIndex = 6;
             // 
             // txtName6
             // 
             txtName6.Dock = DockStyle.Fill;
             txtName6.Font = new Font("Consolas", 20F);
-            txtName6.Location = new Point(98, 0);
-            txtName6.Margin = new Padding(2);
+            txtName6.Location = new Point(140, 0);
             txtName6.Name = "txtName6";
             txtName6.ShortcutsEnabled = false;
-            txtName6.Size = new Size(468, 42);
+            txtName6.Size = new Size(670, 70);
             txtName6.TabIndex = 0;
             txtName6.Text = "...";
             txtName6.Enter += NamesEnter;
@@ -703,10 +675,9 @@
             btnStart6.BackgroundImageLayout = ImageLayout.Stretch;
             btnStart6.Dock = DockStyle.Left;
             btnStart6.FlatStyle = FlatStyle.Popup;
-            btnStart6.Location = new Point(49, 0);
-            btnStart6.Margin = new Padding(2);
+            btnStart6.Location = new Point(70, 0);
             btnStart6.Name = "btnStart6";
-            btnStart6.Size = new Size(49, 42);
+            btnStart6.Size = new Size(70, 70);
             btnStart6.TabIndex = 0;
             btnStart6.TabStop = false;
             btnStart6.UseVisualStyleBackColor = false;
@@ -717,10 +688,9 @@
             btnReset6.BackgroundImageLayout = ImageLayout.Stretch;
             btnReset6.Dock = DockStyle.Right;
             btnReset6.FlatStyle = FlatStyle.Popup;
-            btnReset6.Location = new Point(566, 0);
-            btnReset6.Margin = new Padding(2);
+            btnReset6.Location = new Point(810, 0);
             btnReset6.Name = "btnReset6";
-            btnReset6.Size = new Size(49, 42);
+            btnReset6.Size = new Size(70, 70);
             btnReset6.TabIndex = 2;
             btnReset6.TabStop = false;
             btnReset6.UseVisualStyleBackColor = true;
@@ -733,9 +703,8 @@
             btnStop6.Dock = DockStyle.Left;
             btnStop6.FlatStyle = FlatStyle.Popup;
             btnStop6.Location = new Point(0, 0);
-            btnStop6.Margin = new Padding(2);
             btnStop6.Name = "btnStop6";
-            btnStop6.Size = new Size(49, 42);
+            btnStop6.Size = new Size(70, 70);
             btnStop6.TabIndex = 1;
             btnStop6.TabStop = false;
             btnStop6.UseVisualStyleBackColor = true;
@@ -748,21 +717,19 @@
             panel7.Controls.Add(btnReset7);
             panel7.Controls.Add(btnStop7);
             panel7.Dock = DockStyle.Bottom;
-            panel7.Location = new Point(2, 472);
-            panel7.Margin = new Padding(2);
+            panel7.Location = new Point(3, 788);
             panel7.Name = "panel7";
-            panel7.Size = new Size(615, 42);
+            panel7.Size = new Size(880, 70);
             panel7.TabIndex = 7;
             // 
             // txtName7
             // 
             txtName7.Dock = DockStyle.Fill;
             txtName7.Font = new Font("Consolas", 20F);
-            txtName7.Location = new Point(98, 0);
-            txtName7.Margin = new Padding(2);
+            txtName7.Location = new Point(140, 0);
             txtName7.Name = "txtName7";
             txtName7.ShortcutsEnabled = false;
-            txtName7.Size = new Size(468, 42);
+            txtName7.Size = new Size(670, 70);
             txtName7.TabIndex = 0;
             txtName7.Text = "...";
             txtName7.Enter += NamesEnter;
@@ -776,10 +743,9 @@
             btnStart7.BackgroundImageLayout = ImageLayout.Stretch;
             btnStart7.Dock = DockStyle.Left;
             btnStart7.FlatStyle = FlatStyle.Popup;
-            btnStart7.Location = new Point(49, 0);
-            btnStart7.Margin = new Padding(2);
+            btnStart7.Location = new Point(70, 0);
             btnStart7.Name = "btnStart7";
-            btnStart7.Size = new Size(49, 42);
+            btnStart7.Size = new Size(70, 70);
             btnStart7.TabIndex = 0;
             btnStart7.TabStop = false;
             btnStart7.UseVisualStyleBackColor = false;
@@ -790,10 +756,9 @@
             btnReset7.BackgroundImageLayout = ImageLayout.Stretch;
             btnReset7.Dock = DockStyle.Right;
             btnReset7.FlatStyle = FlatStyle.Popup;
-            btnReset7.Location = new Point(566, 0);
-            btnReset7.Margin = new Padding(2);
+            btnReset7.Location = new Point(810, 0);
             btnReset7.Name = "btnReset7";
-            btnReset7.Size = new Size(49, 42);
+            btnReset7.Size = new Size(70, 70);
             btnReset7.TabIndex = 2;
             btnReset7.TabStop = false;
             btnReset7.UseVisualStyleBackColor = true;
@@ -806,9 +771,8 @@
             btnStop7.Dock = DockStyle.Left;
             btnStop7.FlatStyle = FlatStyle.Popup;
             btnStop7.Location = new Point(0, 0);
-            btnStop7.Margin = new Padding(2);
             btnStop7.Name = "btnStop7";
-            btnStop7.Size = new Size(49, 42);
+            btnStop7.Size = new Size(70, 70);
             btnStop7.TabIndex = 1;
             btnStop7.TabStop = false;
             btnStop7.UseVisualStyleBackColor = true;
@@ -821,21 +785,19 @@
             panel8.Controls.Add(btnReset8);
             panel8.Controls.Add(btnStop8);
             panel8.Dock = DockStyle.Bottom;
-            panel8.Location = new Point(2, 514);
-            panel8.Margin = new Padding(2);
+            panel8.Location = new Point(3, 858);
             panel8.Name = "panel8";
-            panel8.Size = new Size(615, 42);
+            panel8.Size = new Size(880, 70);
             panel8.TabIndex = 8;
             // 
             // txtName8
             // 
             txtName8.Dock = DockStyle.Fill;
             txtName8.Font = new Font("Consolas", 20F);
-            txtName8.Location = new Point(98, 0);
-            txtName8.Margin = new Padding(2);
+            txtName8.Location = new Point(140, 0);
             txtName8.Name = "txtName8";
             txtName8.ShortcutsEnabled = false;
-            txtName8.Size = new Size(468, 42);
+            txtName8.Size = new Size(670, 70);
             txtName8.TabIndex = 0;
             txtName8.Text = "...";
             txtName8.Enter += NamesEnter;
@@ -849,10 +811,9 @@
             btnStart8.BackgroundImageLayout = ImageLayout.Stretch;
             btnStart8.Dock = DockStyle.Left;
             btnStart8.FlatStyle = FlatStyle.Popup;
-            btnStart8.Location = new Point(49, 0);
-            btnStart8.Margin = new Padding(2);
+            btnStart8.Location = new Point(70, 0);
             btnStart8.Name = "btnStart8";
-            btnStart8.Size = new Size(49, 42);
+            btnStart8.Size = new Size(70, 70);
             btnStart8.TabIndex = 0;
             btnStart8.TabStop = false;
             btnStart8.UseVisualStyleBackColor = false;
@@ -863,10 +824,9 @@
             btnReset8.BackgroundImageLayout = ImageLayout.Stretch;
             btnReset8.Dock = DockStyle.Right;
             btnReset8.FlatStyle = FlatStyle.Popup;
-            btnReset8.Location = new Point(566, 0);
-            btnReset8.Margin = new Padding(2);
+            btnReset8.Location = new Point(810, 0);
             btnReset8.Name = "btnReset8";
-            btnReset8.Size = new Size(49, 42);
+            btnReset8.Size = new Size(70, 70);
             btnReset8.TabIndex = 2;
             btnReset8.TabStop = false;
             btnReset8.UseVisualStyleBackColor = true;
@@ -879,9 +839,8 @@
             btnStop8.Dock = DockStyle.Left;
             btnStop8.FlatStyle = FlatStyle.Popup;
             btnStop8.Location = new Point(0, 0);
-            btnStop8.Margin = new Padding(2);
             btnStop8.Name = "btnStop8";
-            btnStop8.Size = new Size(49, 42);
+            btnStop8.Size = new Size(70, 70);
             btnStop8.TabIndex = 1;
             btnStop8.TabStop = false;
             btnStop8.UseVisualStyleBackColor = true;
@@ -898,9 +857,10 @@
             toolbar.Controls.Add(rbSetup);
             toolbar.Controls.Add(pictureBox1);
             toolbar.Dock = DockStyle.Bottom;
-            toolbar.Location = new Point(0, 560);
+            toolbar.Location = new Point(0, 933);
+            toolbar.Margin = new Padding(4, 5, 4, 5);
             toolbar.Name = "toolbar";
-            toolbar.Size = new Size(1315, 70);
+            toolbar.Size = new Size(1879, 117);
             toolbar.TabIndex = 2;
             // 
             // lblVersion
@@ -908,9 +868,10 @@
             lblVersion.Dock = DockStyle.Fill;
             lblVersion.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblVersion.ForeColor = Color.Coral;
-            lblVersion.Location = new Point(882, 0);
+            lblVersion.Location = new Point(1260, 0);
+            lblVersion.Margin = new Padding(4, 0, 4, 0);
             lblVersion.Name = "lblVersion";
-            lblVersion.Size = new Size(223, 70);
+            lblVersion.Size = new Size(319, 117);
             lblVersion.TabIndex = 8;
             lblVersion.Text = "Versión 1.0.0";
             lblVersion.TextAlign = ContentAlignment.MiddleCenter;
@@ -921,10 +882,9 @@
             btnExcess.BackgroundImageLayout = ImageLayout.Stretch;
             btnExcess.Dock = DockStyle.Right;
             btnExcess.FlatStyle = FlatStyle.Popup;
-            btnExcess.Location = new Point(1105, 0);
-            btnExcess.Margin = new Padding(2);
+            btnExcess.Location = new Point(1579, 0);
             btnExcess.Name = "btnExcess";
-            btnExcess.Size = new Size(70, 70);
+            btnExcess.Size = new Size(100, 117);
             btnExcess.TabIndex = 6;
             btnExcess.TabStop = false;
             notas.SetToolTip(btnExcess, "Eliminar el exceso de tiempo en las bolsas.");
@@ -937,14 +897,15 @@
             btnExtra.BackgroundImageLayout = ImageLayout.Stretch;
             btnExtra.Dock = DockStyle.Right;
             btnExtra.FlatStyle = FlatStyle.Popup;
-            btnExtra.Location = new Point(1175, 0);
-            btnExtra.Margin = new Padding(2);
+            btnExtra.Location = new Point(1679, 0);
             btnExtra.Name = "btnExtra";
-            btnExtra.Size = new Size(70, 70);
+            btnExtra.Size = new Size(100, 117);
             btnExtra.TabIndex = 5;
             btnExtra.TabStop = false;
             notas.SetToolTip(btnExtra, "Agregar tiempo extra a la candidata o candidato seleccionado.");
             btnExtra.UseVisualStyleBackColor = true;
+            btnExtra.Visible = false;
+            btnExtra.Click += ExtraTime;
             // 
             // btnReset
             // 
@@ -952,10 +913,9 @@
             btnReset.BackgroundImageLayout = ImageLayout.Stretch;
             btnReset.Dock = DockStyle.Right;
             btnReset.FlatStyle = FlatStyle.Popup;
-            btnReset.Location = new Point(1245, 0);
-            btnReset.Margin = new Padding(2);
+            btnReset.Location = new Point(1779, 0);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(70, 70);
+            btnReset.Size = new Size(100, 117);
             btnReset.TabIndex = 4;
             btnReset.TabStop = false;
             notas.SetToolTip(btnReset, "Reset del cronómetro general.");
@@ -968,10 +928,9 @@
             rbClosures.Dock = DockStyle.Left;
             rbClosures.Enabled = false;
             rbClosures.Font = new Font("Consolas", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbClosures.Location = new Point(728, 0);
-            rbClosures.Margin = new Padding(2);
+            rbClosures.Location = new Point(1040, 0);
             rbClosures.Name = "rbClosures";
-            rbClosures.Size = new Size(154, 70);
+            rbClosures.Size = new Size(220, 117);
             rbClosures.TabIndex = 3;
             rbClosures.Text = "CIERRES";
             rbClosures.TextAlign = ContentAlignment.MiddleCenter;
@@ -984,10 +943,9 @@
             rbDebate.Dock = DockStyle.Left;
             rbDebate.Enabled = false;
             rbDebate.Font = new Font("Consolas", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbDebate.Location = new Point(588, 0);
-            rbDebate.Margin = new Padding(2);
+            rbDebate.Location = new Point(840, 0);
             rbDebate.Name = "rbDebate";
-            rbDebate.Size = new Size(140, 70);
+            rbDebate.Size = new Size(200, 117);
             rbDebate.TabIndex = 2;
             rbDebate.Text = "DEBATE";
             rbDebate.TextAlign = ContentAlignment.MiddleCenter;
@@ -999,10 +957,9 @@
             rbEntrances.Appearance = Appearance.Button;
             rbEntrances.Dock = DockStyle.Left;
             rbEntrances.Font = new Font("Consolas", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbEntrances.Location = new Point(322, 0);
-            rbEntrances.Margin = new Padding(2);
+            rbEntrances.Location = new Point(460, 0);
             rbEntrances.Name = "rbEntrances";
-            rbEntrances.Size = new Size(266, 70);
+            rbEntrances.Size = new Size(380, 117);
             rbEntrances.TabIndex = 1;
             rbEntrances.Text = "PRESENTACIONES";
             rbEntrances.TextAlign = ContentAlignment.MiddleCenter;
@@ -1015,10 +972,9 @@
             rbSetup.Checked = true;
             rbSetup.Dock = DockStyle.Left;
             rbSetup.Font = new Font("Consolas", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbSetup.Location = new Point(70, 0);
-            rbSetup.Margin = new Padding(2);
+            rbSetup.Location = new Point(100, 0);
             rbSetup.Name = "rbSetup";
-            rbSetup.Size = new Size(252, 70);
+            rbSetup.Size = new Size(360, 117);
             rbSetup.TabIndex = 0;
             rbSetup.TabStop = true;
             rbSetup.Text = "CONFIGURACIÓN";
@@ -1031,8 +987,9 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.Dock = DockStyle.Left;
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(70, 70);
+            pictureBox1.Size = new Size(100, 117);
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
@@ -1040,7 +997,6 @@
             // 
             splitContainer1.Dock = DockStyle.Fill;
             splitContainer1.Location = new Point(0, 0);
-            splitContainer1.Margin = new Padding(2);
             splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -1050,19 +1006,17 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(panelMain);
-            splitContainer1.Size = new Size(1315, 560);
-            splitContainer1.SplitterDistance = 691;
-            splitContainer1.SplitterWidth = 3;
+            splitContainer1.Size = new Size(1879, 933);
+            splitContainer1.SplitterDistance = 987;
             splitContainer1.TabIndex = 3;
             // 
             // Chronometers
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1315, 630);
+            ClientSize = new Size(1879, 1050);
             Controls.Add(splitContainer1);
             Controls.Add(toolbar);
-            Margin = new Padding(2);
             Name = "Chronometers";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CRONÓMETROS";
