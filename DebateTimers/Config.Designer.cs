@@ -54,11 +54,11 @@
             nmExtra.Dock = DockStyle.Bottom;
             nmExtra.Font = new Font("Swis721 BlkCn BT", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             nmExtra.ForeColor = Color.FromArgb(92, 15, 139);
-            nmExtra.Location = new Point(0, 742);
+            nmExtra.Location = new Point(0, 569);
             nmExtra.Margin = new Padding(161, 145, 161, 145);
             nmExtra.Maximum = new decimal(new int[] { 3600, 0, 0, 0 });
             nmExtra.Name = "nmExtra";
-            nmExtra.Size = new Size(740, 94);
+            nmExtra.Size = new Size(574, 65);
             nmExtra.TabIndex = 4;
             nmExtra.TextAlign = HorizontalAlignment.Center;
             // 
@@ -70,12 +70,12 @@
             bottomBar.Controls.Add(btnConfirm, 0, 0);
             bottomBar.Controls.Add(btnCancel, 1, 0);
             bottomBar.Dock = DockStyle.Bottom;
-            bottomBar.Location = new Point(0, 836);
+            bottomBar.Location = new Point(0, 634);
             bottomBar.Name = "bottomBar";
             bottomBar.RowCount = 1;
             bottomBar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             bottomBar.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            bottomBar.Size = new Size(740, 78);
+            bottomBar.Size = new Size(574, 78);
             bottomBar.TabIndex = 5;
             // 
             // btnConfirm
@@ -84,7 +84,7 @@
             btnConfirm.Font = new Font("Swis721 BlkCn BT", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnConfirm.Location = new Point(3, 3);
             btnConfirm.Name = "btnConfirm";
-            btnConfirm.Size = new Size(364, 72);
+            btnConfirm.Size = new Size(281, 72);
             btnConfirm.TabIndex = 5;
             btnConfirm.Text = "Confirmar";
             btnConfirm.UseVisualStyleBackColor = true;
@@ -94,9 +94,9 @@
             // 
             btnCancel.Dock = DockStyle.Fill;
             btnCancel.Font = new Font("Swis721 BlkCn BT", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCancel.Location = new Point(373, 3);
+            btnCancel.Location = new Point(290, 3);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(364, 72);
+            btnCancel.Size = new Size(281, 72);
             btnCancel.TabIndex = 6;
             btnCancel.Text = "Cancelar";
             btnCancel.UseVisualStyleBackColor = true;
@@ -107,9 +107,9 @@
             lblExtra.Dock = DockStyle.Bottom;
             lblExtra.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblExtra.ForeColor = Color.DarkOrange;
-            lblExtra.Location = new Point(0, 670);
+            lblExtra.Location = new Point(0, 509);
             lblExtra.Name = "lblExtra";
-            lblExtra.Size = new Size(740, 72);
+            lblExtra.Size = new Size(574, 60);
             lblExtra.TabIndex = 2;
             lblExtra.Text = "Indica la cantidad de segundos que dura cada TIEMPO EXTRA para una candidata o candidato.";
             // 
@@ -118,9 +118,9 @@
             lblClosure.Dock = DockStyle.Bottom;
             lblClosure.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblClosure.ForeColor = Color.DarkOrange;
-            lblClosure.Location = new Point(0, 504);
+            lblClosure.Location = new Point(0, 384);
             lblClosure.Name = "lblClosure";
-            lblClosure.Size = new Size(740, 72);
+            lblClosure.Size = new Size(574, 60);
             lblClosure.TabIndex = 4;
             lblClosure.Text = "Indica la cantidad de segundos que dura cada CIERRE de una candidata o candidato.";
             // 
@@ -129,11 +129,11 @@
             nmClosure.Dock = DockStyle.Bottom;
             nmClosure.Font = new Font("Swis721 BlkCn BT", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             nmClosure.ForeColor = Color.FromArgb(92, 15, 139);
-            nmClosure.Location = new Point(0, 576);
+            nmClosure.Location = new Point(0, 444);
             nmClosure.Margin = new Padding(161, 145, 161, 145);
             nmClosure.Maximum = new decimal(new int[] { 3600, 0, 0, 0 });
             nmClosure.Name = "nmClosure";
-            nmClosure.Size = new Size(740, 94);
+            nmClosure.Size = new Size(574, 65);
             nmClosure.TabIndex = 3;
             nmClosure.TextAlign = HorizontalAlignment.Center;
             // 
@@ -142,9 +142,9 @@
             lblParticipation.Dock = DockStyle.Bottom;
             lblParticipation.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblParticipation.ForeColor = Color.DarkOrange;
-            lblParticipation.Location = new Point(0, 338);
+            lblParticipation.Location = new Point(0, 259);
             lblParticipation.Name = "lblParticipation";
-            lblParticipation.Size = new Size(740, 72);
+            lblParticipation.Size = new Size(574, 60);
             lblParticipation.TabIndex = 6;
             lblParticipation.Text = "Indica la cantidad de segundos que dura cada PARTICIPACIÓN de una candidata o candidato.";
             // 
@@ -153,11 +153,11 @@
             nmParticipation.Dock = DockStyle.Bottom;
             nmParticipation.Font = new Font("Swis721 BlkCn BT", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             nmParticipation.ForeColor = Color.FromArgb(92, 15, 139);
-            nmParticipation.Location = new Point(0, 410);
+            nmParticipation.Location = new Point(0, 319);
             nmParticipation.Margin = new Padding(161, 145, 161, 145);
             nmParticipation.Maximum = new decimal(new int[] { 3600, 0, 0, 0 });
             nmParticipation.Name = "nmParticipation";
-            nmParticipation.Size = new Size(740, 94);
+            nmParticipation.Size = new Size(574, 65);
             nmParticipation.TabIndex = 2;
             nmParticipation.TextAlign = HorizontalAlignment.Center;
             nmParticipation.ValueChanged += ValidateValueChanged;
@@ -167,9 +167,9 @@
             lblDebate.Dock = DockStyle.Bottom;
             lblDebate.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblDebate.ForeColor = Color.DarkOrange;
-            lblDebate.Location = new Point(0, 172);
+            lblDebate.Location = new Point(0, 134);
             lblDebate.Name = "lblDebate";
-            lblDebate.Size = new Size(740, 72);
+            lblDebate.Size = new Size(574, 60);
             lblDebate.TabIndex = 8;
             lblDebate.Text = "Indica la cantidad de segundos que dura cada BOLSA DE TIEMPO de una candidata o candidato.";
             // 
@@ -178,11 +178,11 @@
             nmDebate.Dock = DockStyle.Bottom;
             nmDebate.Font = new Font("Swis721 BlkCn BT", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             nmDebate.ForeColor = Color.FromArgb(92, 15, 139);
-            nmDebate.Location = new Point(0, 244);
+            nmDebate.Location = new Point(0, 194);
             nmDebate.Margin = new Padding(161, 145, 161, 145);
             nmDebate.Maximum = new decimal(new int[] { 3600, 0, 0, 0 });
             nmDebate.Name = "nmDebate";
-            nmDebate.Size = new Size(740, 94);
+            nmDebate.Size = new Size(574, 65);
             nmDebate.TabIndex = 1;
             nmDebate.TextAlign = HorizontalAlignment.Center;
             // 
@@ -191,9 +191,9 @@
             lblEntrance.Dock = DockStyle.Bottom;
             lblEntrance.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblEntrance.ForeColor = Color.DarkOrange;
-            lblEntrance.Location = new Point(0, 6);
+            lblEntrance.Location = new Point(0, 9);
             lblEntrance.Name = "lblEntrance";
-            lblEntrance.Size = new Size(740, 72);
+            lblEntrance.Size = new Size(574, 60);
             lblEntrance.TabIndex = 10;
             lblEntrance.Text = "Indica la cantidad de segundos que dura cada ENTRADA de una candidata o candidato.";
             // 
@@ -202,19 +202,19 @@
             nmEntrance.Dock = DockStyle.Bottom;
             nmEntrance.Font = new Font("Swis721 BlkCn BT", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             nmEntrance.ForeColor = Color.FromArgb(92, 15, 139);
-            nmEntrance.Location = new Point(0, 78);
+            nmEntrance.Location = new Point(0, 69);
             nmEntrance.Margin = new Padding(161, 145, 161, 145);
             nmEntrance.Maximum = new decimal(new int[] { 3600, 0, 0, 0 });
             nmEntrance.Name = "nmEntrance";
-            nmEntrance.Size = new Size(740, 94);
+            nmEntrance.Size = new Size(574, 65);
             nmEntrance.TabIndex = 0;
             nmEntrance.TextAlign = HorizontalAlignment.Center;
             // 
             // Config
             // 
-            AutoScaleDimensions = new SizeF(73F, 173F);
+            AutoScaleDimensions = new SizeF(49F, 115F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(740, 914);
+            ClientSize = new Size(574, 712);
             ControlBox = false;
             Controls.Add(lblEntrance);
             Controls.Add(nmEntrance);

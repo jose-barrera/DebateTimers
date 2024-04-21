@@ -40,7 +40,7 @@
             display.ForeColor = Color.FromArgb(92, 15, 139);
             display.Location = new Point(0, 50);
             display.Name = "display";
-            display.Size = new Size(682, 262);
+            display.Size = new Size(422, 178);
             display.TabIndex = 0;
             display.Text = "00:00";
             display.TextAlign = ContentAlignment.MiddleCenter;
@@ -49,24 +49,25 @@
             // lblName
             // 
             lblName.Dock = DockStyle.Top;
+            lblName.Font = new Font("Swis721 BlkCn BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblName.ImageAlign = ContentAlignment.TopCenter;
             lblName.Location = new Point(0, 0);
             lblName.Name = "lblName";
-            lblName.Size = new Size(682, 50);
+            lblName.Size = new Size(422, 50);
             lblName.TabIndex = 1;
             lblName.Text = "...";
             lblName.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // CountdownView
             // 
-            AutoScaleDimensions = new SizeF(11F, 26F);
+            AutoScaleDimensions = new SizeF(8F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(display);
             Controls.Add(lblName);
-            Font = new Font("Swis721 BlkCn BT", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Swis721 BlkCn BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "CountdownView";
-            Size = new Size(682, 312);
+            Size = new Size(422, 228);
             Load += CountdownViewLoad;
             ResumeLayout(false);
         }

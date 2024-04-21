@@ -130,10 +130,19 @@
   <data name="stop.disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stop.disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reset.disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reset.disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="play.disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play.disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reset.disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reset.disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="crossedclock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crossedclock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="extratime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\extratime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -6,6 +6,9 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.*.*.*</AssemblyVersion>
+    <FileVersion>1.*.*.*</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

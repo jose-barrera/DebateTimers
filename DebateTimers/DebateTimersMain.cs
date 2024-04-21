@@ -1,9 +1,5 @@
 using DebateTimers.Properties;
-using System.ComponentModel;
 using System.Reflection;
-using System.Reflection.Metadata.Ecma335;
-using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 
 namespace DebateTimers
 {
@@ -17,7 +13,8 @@ namespace DebateTimers
         private int PARTICIPATION_TIME = 90;
         private int CLOSURE_TIME = 60;
         private int EXTRA_TIME = 60;
-        private float EXCESS_TIME = 0.2f;
+        private int EXCESS_TIME = 120;
+        private float EXCESS_TIME_VALUE = 0.2f;
         private int ENTRANCE_ALARM = -1;
         private int PARTICIPATION_ALARM = 15;
         private int CLOSURE_ALARM = -1;
@@ -88,6 +85,8 @@ namespace DebateTimers
             ApplySettings();
             Setup();
             ResumeLayout();
+
+            lblVersion.Text = Assembly.GetExecutingAssembly().GetName().Version!.ToString();
         }
 
         private void FinishedCountdown(object? sender, EventArgs e)
@@ -166,6 +165,12 @@ namespace DebateTimers
                 // Sets the names of the countdowns according their textboxes
                 countdowns[i].Candidate = textboxes[i].Text;
             }
+
+            // Sets the state of general buttons
+            btnExcess.Enabled = false;
+            btnExtra.Enabled = false;
+            btnReset.Enabled = false;
+            btnReset.BackgroundImage = Resources.reset_disabled;
         }
 
         private void Entrances()
@@ -199,6 +204,12 @@ namespace DebateTimers
             }
 
             countdownGeneral.Seconds = ENTRANCE_TIME;
+
+            // Sets the state of general buttons
+            btnExcess.Enabled = false;
+            btnExtra.Enabled = false;
+            btnReset.Enabled = false;
+            btnReset.BackgroundImage = Resources.reset_disabled;
         }
 
         private void Debate()
@@ -230,6 +241,12 @@ namespace DebateTimers
             }
 
             countdownGeneral.Seconds = PARTICIPATION_TIME;
+
+            // Sets the state of general buttons
+            btnExcess.Enabled = true;
+            btnExtra.Enabled = true;
+            btnReset.Enabled = true;
+            btnReset.BackgroundImage = Resources.reset;
         }
 
         private void Closures()
@@ -243,7 +260,7 @@ namespace DebateTimers
                 // Enables start buttons, disables the rest
                 buttons[i, 0].Enabled = true;
                 buttons[i, 0].BackgroundImage = Resources.play;
-                buttons[i, 0].Click -= EntranceStartClick;
+                buttons[i, 0].Click -= DebateStartClick;
                 buttons[i, 0].Click += ClosureStartClick;
                 buttons[i, 1].Enabled = false;
                 buttons[i, 1].BackgroundImage = Resources.stop_disabled;
@@ -262,6 +279,12 @@ namespace DebateTimers
             }
 
             countdownGeneral.Seconds = CLOSURE_TIME;
+
+            // Sets the state of general buttons
+            btnExcess.Enabled = false;
+            btnExtra.Enabled = false;
+            btnReset.Enabled = false;
+            btnReset.BackgroundImage = Resources.reset_disabled;
         }
 
         #endregion
@@ -437,7 +460,15 @@ namespace DebateTimers
 
         private void FormClosingAction(object sender, FormClosingEventArgs e)
         {
-            SaveSettings();
+            if (MessageBox.Show("¿ESTÁS SEGURO DE CERRAR EL PROGRAMA?",
+                "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                SaveSettings();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
 
         private void ApplySettings()
@@ -515,7 +546,23 @@ namespace DebateTimers
                                 case "EXCESO":
                                     if (words.Length == 2)
                                     {
-                                        EXCESS_TIME = float.TryParse(words[1], out EXCESS_TIME) ? EXCESS_TIME : 0.2f;
+                                        EXCESS_TIME_VALUE = float.TryParse(words[1], out EXCESS_TIME_VALUE) ? EXCESS_TIME_VALUE : 0.2f;
+                                        if (EXCESS_TIME_VALUE > 0)
+                                        {
+                                            if (EXCESS_TIME_VALUE < 1)
+                                            {
+                                                EXCESS_TIME = (int)(DEBATE_TIME * EXCESS_TIME_VALUE);
+
+                                            }
+                                            else
+                                            {
+                                                EXCESS_TIME = (int)EXCESS_TIME_VALUE;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            EXCESS_TIME = (int)(DEBATE_TIME * 0.2f);
+                                        }
                                     }
                                     break;
                                 case "ENTRADAW":
@@ -590,7 +637,7 @@ namespace DebateTimers
                 streamWriter.WriteLine("PARTICIPACION," + PARTICIPATION_TIME);
                 streamWriter.WriteLine("CIERRE," + CLOSURE_TIME);
                 streamWriter.WriteLine("EXTRA," + EXTRA_TIME);
-                streamWriter.WriteLine("EXCESO," + EXCESS_TIME);
+                streamWriter.WriteLine("EXCESO," + EXCESS_TIME_VALUE);
                 streamWriter.WriteLine("ENTRADAW," + ENTRANCE_ALARM);
                 streamWriter.WriteLine("PARTICIPATIONW," + PARTICIPATION_ALARM);
                 streamWriter.WriteLine("CIERREW," + CLOSURE_ALARM);
@@ -602,6 +649,37 @@ namespace DebateTimers
             {
 
             }
+        }
+
+        private void ResetClick(object sender, EventArgs e)
+        {
+            if (appState == State.Debate)
+            {
+                countdownGeneral.Reset();
+            }
+        }
+
+        private void RemoveExcess(object sender, EventArgs e)
+        {
+            if (EXCESS_TIME > 0f)
+            {
+                if (MessageBox.Show("¿ESTÁS SEGURO DE ELIMINAR EL EXCESO?\nNo podrás revertir este cambio.",
+                    "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    for (int i = 0; i < 8; i++)
+                    {
+                        if (countdowns[i].Seconds > EXCESS_TIME)
+                        {
+                            countdowns[i].Seconds = EXCESS_TIME;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("NO ESTÁ CONFIGURADO ESTE PARÁMETRO... NO PUEDE APLICARSE ESTA ACCIÓN.", "Aviso", MessageBoxButtons.OK);
+            }
+
         }
     }
 }

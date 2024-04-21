@@ -29,7 +29,7 @@ namespace DebateTimers
         {
             get
             {
-                return (int)this.countdown.Duration.TotalSeconds;
+                return (int)this.countdown.Left.TotalSeconds;
             }
             set
             {
@@ -63,7 +63,8 @@ namespace DebateTimers
             }
             set
             {
-                lblName.Text = value;   
+                lblName.Text = value.Trim();
+                lblName.Visible = lblName.Text.Length > 0;
             }
 
         }
